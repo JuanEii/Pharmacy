@@ -45,3 +45,14 @@ export interface ChatMessage {
   role: 'user' | 'model';
   content: string;
 }
+
+export type ViewState = 'roadmap' | 'simulator';
+
+export interface EvaluationState {
+  isActive: boolean;
+  questionCount: number;
+  currentQuestionIndex: number;
+  phaseWeightPreference: 'fase1' | 'fase2' | null;
+  history: ChatMessage[];
+  awaitingInput: boolean;
+}
