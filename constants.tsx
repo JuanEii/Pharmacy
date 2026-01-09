@@ -9,162 +9,130 @@ export const ROADMAP: CourseModule[] = [
     phase: 1,
     steps: [
       {
-        id: 'f1-b1',
+        id: 'f1-m1',
         phase: 1,
-        title: 'Bloque 1: Fundamentos y Tabla Periódica',
-        description: 'Semanas 1–2: Unidades, masa molar y tendencias periódicas.',
-        content: 'Dominio inicial del lenguaje químico: desde el análisis dimensional hasta la organización electrónica de los elementos.',
-        keyKnowledge: ['Análisis Dimensional', 'Masa Molar', 'Isótopos', 'Tendencias Periódicas'],
+        title: 'Mes 1: Química General I (Estructura)',
+        description: 'Unidades, materia, átomo, tabla periódica, enlaces y geometría molecular.',
+        content: 'Dominio de magnitudes, mol, modelos atómicos, tendencias periódicas, estructuras de Lewis y teoría VSEPR.',
+        keyKnowledge: ['Mol/Masa Molar', 'Números Cuánticos', 'Tendencias Periódicas', 'VSEPR'],
         resources: [
           {
-            title: 'Chemistry 2e (Cap. 1-2) – OpenStax',
-            type: 'article',
-            url: 'https://openstax.org/books/chemistry-2e/pages/1-introduction',
+            title: 'Khan Academy – Química (ES)',
+            type: 'video',
+            url: 'https://es.khanacademy.org/science/chemistry',
             level: 'beginner',
-            estimatedTime: '2 semanas',
-            keyKnowledge: ['Átomos', 'Moléculas', 'Iones'],
-            detailedContent: `
-              <h2 class="text-2xl font-black mb-4">Fundamentos Químicos</h2>
-              <p class="mb-4">Este bloque establece las reglas del juego. Debes dominar la conversión de unidades sin dudar.</p>
-              <ul class="list-disc pl-6 space-y-2 mb-6">
-                <li><strong>Estudio sugerido:</strong> Capítulos 1 "Essentials" y 2 "Atoms, Molecules, and Ions".</li>
-                <li><strong>Reto Técnico:</strong> Resuelve 20 problemas de masa molar y conversión de moles antes de pasar al siguiente tema.</li>
-              </ul>
-            `
+            keyKnowledge: ['Átomo', 'Masa Molar', 'Enlaces'],
+            detailedContent: 'Núcleo del mes: Estudia unidades, átomo, mol y enlaces químicos en español.'
           },
           {
-            title: 'General Chemistry – Coursera',
+            title: 'Iniciándome en la Química – UNAM (ES)',
             type: 'video',
-            url: 'https://www.coursera.org/learn/general-chemistry',
+            url: 'https://www.coursera.org/learn/iniciandome-en-la-qumica',
             level: 'beginner',
-            keyKnowledge: ['Desarrollo de Conceptos'],
-            detailedContent: 'Módulos 1 y 2. Enfócate en la aplicación práctica de la teoría atómica moderna.'
-          }
-        ]
-      },
-      {
-        id: 'f1-b2',
-        phase: 1,
-        title: 'Bloque 2: Enlaces y Geometría',
-        description: 'Semanas 3–4: Estructuras de Lewis y teoría VSEPR.',
-        content: 'Comprender cómo se unen los átomos para formar moléculas y cómo su forma dicta su función biológica.',
-        keyKnowledge: ['Enlace Iónico/Covalente', 'Estructuras de Lewis', 'VSEPR', 'Polaridad'],
-        resources: [
+            keyKnowledge: ['Nomenclatura', 'Tabla Periódica'],
+            detailedContent: 'Curso estructurado de la UNAM/UAM. Módulos 1 y 2 (Materia y Teorías Atómicas).'
+          },
           {
-            title: 'General Chemistry 1 – OLI (Carnegie Mellon)',
-            type: 'practice',
-            url: 'https://oli.cmu.edu/courses/general-chemistry-1-open-free/',
-            level: 'beginner',
-            keyKnowledge: ['Geometría Molecular'],
-            detailedContent: 'Módulos de Chemical Bonding & Molecular Structure. Practica dibujar moléculas de fármacos reales como el Paracetamol.'
-          }
-        ]
-      },
-      {
-        id: 'f1-b3',
-        phase: 1,
-        title: 'Bloque 3: Estequiometría y Gases',
-        description: 'Semanas 5–6: Ecuaciones químicas, rendimiento y soluciones.',
-        content: 'Cálculo exacto de reactivos y productos. Fundamental para la preparación de soluciones en farmacia hospitalaria.',
-        keyKnowledge: ['Reactivo Limitante', 'Rendimiento', 'Gases Ideales', 'Molaridad'],
-        resources: [
-          {
-            title: 'Stoichiometry (Cap. 5-9) – OpenStax',
+            title: 'Chemistry 2e – OpenStax (EN)',
             type: 'article',
-            url: 'https://openstax.org/books/chemistry-2e/pages/5-introduction',
+            url: 'https://openstax.org/books/chemistry-2e/pages/1-introduction',
             level: 'intermediate',
-            keyKnowledge: ['Balanceo', 'Concentración'],
-            detailedContent: 'Capítulos 5 (Estequiometría) y 9 (Gases). Realiza problemas de preparación de soluciones al 0.9% (SSN).'
+            keyKnowledge: ['Deep Dive Theory'],
+            detailedContent: 'Capítulos 1-4 para profundizar en formulación y problemas de mayor rigor técnico.'
           }
         ]
       },
       {
-        id: 'f1-b4',
+        id: 'f1-m2',
         phase: 1,
-        title: 'Bloque 4: Equilibrio y pH',
-        description: 'Semanas 7–8: Ácidos, bases, buffers y solubilidad Ksp.',
-        content: 'Entender el equilibrio químico es vital para comprender la absorción de fármacos (pKa) y la estabilidad de formulaciones.',
-        keyKnowledge: ['pH/pOH', 'Buffers', 'Ksp', 'Henderson-Hasselbalch'],
+        title: 'Mes 2: Química General II (Reacciones)',
+        description: 'Estequiometría, gases, equilibrio, ácidos/bases y solubilidad.',
+        content: 'Cálculo de reacciones, reactivo limitante, pH, buffers y producto de solubilidad (Ksp).',
+        keyKnowledge: ['Estequiometría', 'Gases Ideales', 'pH/pOH', 'Equilibrio Ksp'],
         resources: [
           {
-            title: 'Acids & Bases – Khan Academy',
+            title: 'Khan Academy – Reacciones y Equilibrio (ES)',
             type: 'video',
-            url: 'https://www.khanacademy.org/science/chemistry',
+            url: 'https://es.khanacademy.org/science/chemistry',
             level: 'intermediate',
-            keyKnowledge: ['Equilibrio Iónico'],
-            detailedContent: 'Domina los conceptos de ácidos fuertes/débiles y el producto de solubilidad para entender precipitados en mezclas.'
+            keyKnowledge: ['Cálculos Reacción', 'Ácido-Base'],
+            detailedContent: 'Secciones de estequiometría, gases y equilibrio iónico.'
+          },
+          {
+            title: 'OpenStax Chemistry 2e (EN)',
+            type: 'article',
+            url: 'https://openstax.org/books/chemistry-2e/pages/13-introduction',
+            level: 'expert',
+            keyKnowledge: ['Complex Equilibrium'],
+            detailedContent: 'Capítulos 13-15: Fundamental para entender la solubilidad de fármacos y formulación.'
           }
         ]
       },
       {
-        id: 'f1-b5',
+        id: 'f1-m3',
         phase: 1,
-        title: 'Bloque 5: Estructura Orgánica',
-        description: 'Semanas 9–10: Grupos funcionales e hibridación.',
-        content: 'Introducción a la química del carbono. Identificación de grupos funcionales en estructuras de fármacos complejos.',
-        keyKnowledge: ['Hibridación sp/sp2/sp3', 'Esqueleto de líneas', 'Grupos Funcionales'],
+        title: 'Mes 3: Química Orgánica I (Estructura)',
+        description: 'Estructura, grupos funcionales y estereoquímica.',
+        content: 'Hibridación, grupos funcionales (alcoholes, carbonilos, aminas) y quiralidad (R/S).',
+        keyKnowledge: ['Hibridación', 'Nomenclatura IUPAC', 'Enantiómeros', 'Talidomida Case'],
         resources: [
           {
-            title: 'Organic Chemistry – OpenStax',
+            title: 'Khan Academy – Orgánica (ES)',
+            type: 'video',
+            url: 'https://es.khanacademy.org/science/organic-chemistry',
+            level: 'intermediate',
+            keyKnowledge: ['Funcionales', 'Estereoquímica'],
+            detailedContent: 'Fundamentos de estructura y centros quirales en español.'
+          },
+          {
+            title: 'Química Orgánica: un mundo a tu alcance (ES)',
+            type: 'video',
+            url: 'https://www.my-mooc.com/en/mooc/la-quimica-organica-un-mundo-a-tu-alcance-c4db7934-64f2-4bca-a50f-d8be67f0eee8',
+            level: 'beginner',
+            keyKnowledge: ['Bases Orgánicas'],
+            detailedContent: 'MOOC de la UAM. Parte 1: Estructura molecular y fundamentos.'
+          },
+          {
+            title: 'Organic Chemistry – John McMurry (EN)',
             type: 'article',
             url: 'https://openstax.org/books/organic-chemistry/pages/index',
-            level: 'intermediate',
-            keyKnowledge: ['Nomenclatura', 'Estructura'],
-            detailedContent: 'Capítulos 1-3. Crea una tabla de grupos funcionales vinculando cada uno con un fármaco real (ej. Ácido carboxílico -> Aspirina).'
-          }
-        ]
-      },
-      {
-        id: 'f1-b6',
-        phase: 1,
-        title: 'Bloque 6: Estereoquímica',
-        description: 'Semanas 11–12: Quiralidad y su importancia clínica.',
-        content: '¿Por qué la forma espacial de una molécula cambia su efecto? El caso de la talidomida y el ibuprofeno.',
-        keyKnowledge: ['Enantiómeros', 'Diastereómeros', 'R/S System', 'Fischer Projections'],
-        resources: [
-          {
-            title: 'Stereochemistry Practice – ChemInteractive',
-            type: 'practice',
-            url: 'https://cheminteractive.ie/',
             level: 'expert',
-            keyKnowledge: ['Centros Quirales'],
-            detailedContent: 'Ejercicios intensivos de determinación de centros R/S. Obligatorio para entender farmacología avanzada.'
+            keyKnowledge: ['Advanced Stereochem'],
+            detailedContent: 'Capítulos 1-5. Referencia obligatoria para niveles universitarios de farmacia.'
           }
         ]
       },
       {
-        id: 'f1-b7',
+        id: 'f1-m4',
         phase: 1,
-        title: 'Bloque 7: Mecanismos SN y E',
-        description: 'Semanas 13–14: Sustitución nucleofílica y eliminación.',
-        content: 'Cómo se rompen y forman enlaces. SN1 vs SN2 y su competencia con las reacciones de eliminación.',
-        keyKnowledge: ['Nucleófilos', 'Sustratos', 'Cinética SN1/SN2', 'E1/E2'],
+        title: 'Mes 4: Química Orgánica II (Mecanismos)',
+        description: 'Sustitución, eliminación y reactividad de carbonilos.',
+        content: 'Mecanismos SN1, SN2, E1, E2, aromaticidad e hidrólisis de ésteres (metabolismo de fármacos).',
+        keyKnowledge: ['Mecanismos SN/E', 'Regla Markovnikov', 'Aromaticidad', 'Carbonilos'],
         resources: [
           {
-            title: 'Reaction Guide – Master Organic Chemistry',
+            title: 'Khan Academy – Mecanismos (ES)',
+            type: 'video',
+            url: 'https://es.khanacademy.org/science/organic-chemistry',
+            level: 'expert',
+            keyKnowledge: ['Arrow Pushing'],
+            detailedContent: 'Sustitución, eliminación y reactividad de alquenos y carbonilos.'
+          },
+          {
+            title: 'Master Organic Chemistry – Reaction Guide (EN)',
             type: 'article',
             url: 'https://www.masterorganicchemistry.com/reaction-guide/',
             level: 'expert',
-            keyKnowledge: ['Mecanismos'],
-            detailedContent: 'Guía visual definitiva de mecanismos. Dibuja a mano 15 mecanismos con flechas antes de validar.'
-          }
-        ]
-      },
-      {
-        id: 'f1-b8',
-        phase: 1,
-        title: 'Bloque 8: Carbonilos y Adición',
-        description: 'Semanas 15–16: Reactividad de alquenos y pro-fármacos.',
-        content: 'Final de la base científica: Hidrólisis de ésteres y amidas, clave para entender el metabolismo de pro-fármacos.',
-        keyKnowledge: ['Adición Nucleofílica', 'Hidrólisis de Ésteres', 'Aromaticidad'],
-        resources: [
+            keyKnowledge: ['SN1 vs SN2', 'E1 vs E2'],
+            detailedContent: 'La guía visual definitiva para estudiantes de medicina y farmacia. Analiza 15 mecanismos.'
+          },
           {
-            title: 'Carbonyl Chemistry – Khan Academy',
+            title: 'MOOC Orgánica Parte 2 – UAM (ES)',
             type: 'video',
-            url: 'https://www.khanacademy.org/science/organic-chemistry',
-            level: 'expert',
-            keyKnowledge: ['Reactividad Carbonilo'],
-            detailedContent: 'Análisis de cómo se transforman los fármacos en el cuerpo mediante reacciones de hidrólisis.'
+            url: 'https://www.my-mooc.com/en/mooc/la-quimica-organica-un-mundo-a-tu-alcance-parte-2-4051c43f-fdeb-465c-9cc6-37ee5fdbac2e',
+            level: 'intermediate',
+            keyKnowledge: ['Reactividad Avanzada'],
+            detailedContent: 'Profundización en reactividad de grupos funcionales complejos.'
           }
         ]
       }
@@ -172,239 +140,171 @@ export const ROADMAP: CourseModule[] = [
   },
   {
     id: 'fase-2',
-    title: 'Fase 2: Núcleo Profesional (Mes 5–10)',
+    title: 'Fase 2: Núcleo Profesional e Industrial (Mes 5–10)',
     icon: 'fa-industry',
     phase: 2,
     steps: [
       {
-        id: 'f2-b1',
+        id: 'f2-m5',
         phase: 2,
-        title: 'Bloque 1: Propiedades Fisicoquímicas',
-        description: 'Mes 5: Intro a Pharmaceutics y Preformulación.',
-        content: 'De la molécula al medicamento: estados físicos, tamaño de partícula y solubilidad.',
-        keyKnowledge: ['Solubilidad', 'Tensión Superficial', 'Preformulación', 'Fisicoquímica'],
+        title: 'Mes 5: Tecnología Farmacéutica I',
+        description: 'Propiedades fisicoquímicas y clasificación de formas farmacéuticas.',
+        content: 'Pharmaceutics: diseño de formulaciones, solubilidad, preformulación y terminología oficial.',
+        keyKnowledge: ['Diseño Formulación', 'Solubilidad', 'Nomenclatura DIGEMID', 'Vías Admin'],
         resources: [
           {
-            title: 'Essential Pharmaceutics – Brunaugh',
+            title: 'Tecnología Farmacéutica – Ediuns (ES)',
             type: 'article',
-            url: 'https://ethernet.edu.et/handle/123456789/229',
+            url: 'https://ediuns.com.ar/wp-content/uploads/2020/08/TECNOLOGIA-FARMACEUTICA_web.pdf',
             level: 'intermediate',
-            keyKnowledge: ['Pharmaceutics', 'Fisicoquímica'],
-            detailedContent: 'Libro base para estudiantes con fundamentos de formas farmacéuticas y casos clínicos.'
+            keyKnowledge: ['Operaciones Básicas'],
+            detailedContent: 'Libro central de la Univ. Nacional del Sur. Capítulos de definición y clasificación.'
           },
           {
-            title: 'Pharmaceutics I – Udemy (Free)',
-            type: 'video',
-            url: 'https://www.udemy.com/course/dosage-forms-pharmaceutics-i-dosage-forms-introduction/',
+            title: 'Manual de Formas Farmacéuticas – DIGEMID (ES)',
+            type: 'article',
+            url: 'https://www.digemid.minsa.gob.pe/Archivos/PortalWeb/Informativo/Catalogacion/Formas%20farmacEuticas_2024.pdf',
             level: 'beginner',
-            keyKnowledge: ['Dosage Forms'],
-            detailedContent: 'Repaso básico y contextual de las diferentes formas farmacéuticas.'
-          }
-        ]
-      },
-      {
-        id: 'f2-b2',
-        phase: 2,
-        title: 'Bloque 2: Clasificación y Sólidos',
-        description: 'Mes 5: Polvos, granulados y formas sólidas básicas.',
-        content: 'Categorización general y fundamentos de la fabricación de formas farmacéuticas sólidas.',
-        keyKnowledge: ['Polvos', 'Granulados', 'Sólidos', 'Clasificación'],
-        resources: [
+            keyKnowledge: ['Estandarización 2024'],
+            detailedContent: 'Norma técnica peruana 2024 que estandariza todas las formas modernas.'
+          },
           {
-            title: 'Pharmaceutical Products – FutureLearn',
-            type: 'video',
-            url: 'https://www.futurelearn.com/courses/pharmaceutical-products-for-beginners',
-            level: 'intermediate',
-            keyKnowledge: ['Diseño de Producto'],
-            detailedContent: 'Curso de la Univ. de Malaya sobre el diseño y procesos básicos de fabricación.'
-          }
-        ]
-      },
-      {
-        id: 'f2-b3',
-        phase: 2,
-        title: 'Bloque 3: Sólidos Orales Avanzados',
-        description: 'Mes 6: Procesos de comprimidos y cápsulas.',
-        content: 'Compresión, granulación y recubrimiento. Control de calidad de sólidos orales.',
-        keyKnowledge: ['Compresión', 'Recubrimiento', 'Control de Calidad', 'Disolución'],
-        resources: [
-          {
-            title: 'Modern Pharmaceutics: A Textbook',
+            title: 'Essential Pharmaceutics – Springer (EN)',
             type: 'article',
-            url: 'https://akfarm-xaverius.ac.id/download/pharmaceutical_dosage_forms.pdf',
+            url: 'https://link.springer.com/book/10.1007/978-3-030-22107-2',
             level: 'expert',
-            keyKnowledge: ['Diseño Industrial'],
-            detailedContent: 'Visión profunda del diseño y fabricación a escala industrial de formas sólidas.'
+            keyKnowledge: ['Science of Dosage Forms'],
+            detailedContent: 'Referencia avanzada de postgrado sobre la ciencia de pharmaceutics.'
           }
         ]
       },
       {
-        id: 'f2-b4',
+        id: 'f2-m6',
         phase: 2,
-        title: 'Bloque 4: Semisólidos y Tópicos',
-        description: 'Mes 6: Cremas, ungüentos y geles.',
-        content: 'Propiedades reológicas y estabilidad de sistemas dispersos para aplicación tópica.',
-        keyKnowledge: ['Emulgentes', 'Reología', 'Ungüentos', 'Geles'],
+        title: 'Mes 6: Formas Sólidas y Fabricación',
+        description: 'Polvos, granulados, comprimidos y cápsulas.',
+        content: 'Preformulación, granulación, compresión, recubrimiento y controles de calidad industrial.',
+        keyKnowledge: ['Compresión', 'Friabilidad', 'Disolución', 'Defectos Comprimido'],
         resources: [
           {
-            title: 'Essential Pharmaceutics: Semisólidos',
+            title: 'Formas Sólidas – Ediuns (ES)',
             type: 'article',
-            url: 'https://ethernet.edu.et/handle/123456789/229',
+            url: 'https://ediuns.com.ar/wp-content/uploads/2020/08/TECNOLOGIA-FARMACEUTICA_web.pdf',
             level: 'intermediate',
-            keyKnowledge: ['Sistemas Dispersos'],
-            detailedContent: 'Capítulos enfocados en reología y estabilidad física de emulsiones y semisólidos.'
-          }
-        ]
-      },
-      {
-        id: 'f2-b5',
-        phase: 2,
-        title: 'Bloque 5: Formas Líquidas',
-        description: 'Mes 7: Jarabes, suspensiones y emulsiones.',
-        content: 'Estabilidad de suspensiones (sedimentación) y emulsiones (HLB).',
-        keyKnowledge: ['Suspensiones', 'Emulsiones', 'HLB', 'Jarabe'],
-        resources: [
+            keyKnowledge: ['Granulación'],
+            detailedContent: 'Procesos de fabricación y operaciones unitarias aplicadas a sólidos orales.'
+          },
           {
-            title: 'Liquid Dosage Forms – FutureLearn',
+            title: 'Catálogo Detallado FF – DIGEMID (ES)',
             type: 'article',
-            url: 'https://www.futurelearn.com/courses/pharmaceutical-products-for-beginners',
-            level: 'intermediate',
-            keyKnowledge: ['Tensoactivos', 'HLB'],
-            detailedContent: 'Módulos sobre tipos de formas líquidas y parámetros de calidad críticos.'
+            url: 'https://www.digemid.minsa.gob.pe/Archivos/PortalWeb/Informativo/Catalogacion/CAT_FORMAS_FARMACEUTICAS_DETALLADAS_NOVIEMBRE_%202024.pdf',
+            level: 'beginner',
+            keyKnowledge: ['Nomenclatura Industrial'],
+            detailedContent: 'Familiarízate con la terminología industrial real para productos comercializados.'
           }
         ]
       },
       {
-        id: 'f2-b6',
+        id: 'f2-m7',
         phase: 2,
-        title: 'Bloque 6: Estériles y GMP',
-        description: 'Mes 7: Inyectables, estabilidad y principios GMP.',
-        content: 'Requisitos de esterilidad, pirogenicidad y liofilización. Introducción a normas industriales.',
-        keyKnowledge: ['Esterilidad', 'Liofilización', 'BPM/GMP', 'Estabilidad'],
+        title: 'Mes 7: Líquidos, Semisólidos y GMP',
+        description: 'Sistemas dispersos, estériles y aseguramiento de calidad.',
+        content: 'Soluciones, suspensiones, cremas, inyectables y fundamentos de Good Manufacturing Practices.',
+        keyKnowledge: ['Emulsiones HLB', 'Esterilidad', 'BPM/GMP', 'Estabilidad'],
         resources: [
           {
-            title: 'Foundations of GMP – USP (Gratis)',
+            title: 'Foundations of GMP – USP (EN)',
             type: 'video',
             url: 'https://www.usp.org/global-public-health/promoting-quality-of-medicines/gmp-online-course',
             level: 'expert',
-            keyKnowledge: ['GMP OMS', 'PIC/S'],
-            detailedContent: 'Curso de 10 módulos sobre principios de manufactura de calidad mundial.'
-          }
-        ]
-      },
-      {
-        id: 'f2-b7',
-        phase: 2,
-        title: 'Bloque 7: Supply Chain Farmacéutica',
-        description: 'Mes 8: Ciclo de suministro y actores del sector.',
-        content: 'Mapeo de la cadena: desde el fabricante hasta la farmacia hospitalaria/comunitaria.',
-        keyKnowledge: ['Ciclo de Suministro', 'Mayoristas', 'Actores', 'Disponibilidad'],
-        resources: [
-          {
-            title: 'Practical Pharma Supply Management',
-            type: 'article',
-            url: 'https://www.udemy.com/course/pharmaceutical-supply-chain-management-a-practical-guide/',
-            level: 'intermediate',
-            keyKnowledge: ['Cuantificación', 'Especificación'],
-            detailedContent: 'Curso completo sobre planificación y distribución con enfoque en países de ingresos medios.'
+            keyKnowledge: ['OMS/PIC-S Standards'],
+            detailedContent: 'Curso gratuito de la USP. 10 módulos esenciales para cualquier cargo industrial.'
           },
           {
-            title: 'Phasuma: Consultoría Supply',
+            title: 'Calidad Tecnologías Sanitarias – OPS/OMS (ES)',
             type: 'article',
-            url: 'https://phasuma.com/',
-            level: 'beginner',
-            keyKnowledge: ['Mapeo de Cadena'],
-            detailedContent: 'Referencia técnica sobre las etapas críticas del ciclo de suministro farmacéutico.'
-          }
-        ]
-      },
-      {
-        id: 'f2-b8',
-        phase: 2,
-        title: 'Bloque 8: Planificación e Inventario',
-        description: 'Mes 8: Cuantificación, pronóstico y stock de seguridad.',
-        content: 'Cálculo de necesidades basado en consumo histórico y morbilidad epidemiológica.',
-        keyKnowledge: ['Lead Time', 'Punto de Pedido', 'Stock Seguridad', 'Forecasting'],
-        resources: [
-          {
-            title: 'WHO Storage & Distribution Practices',
-            type: 'article',
-            url: 'https://extranet.who.int/prequal/sites/default/files/document_files/TRS1025_annex7.pdf',
-            level: 'expert',
-            keyKnowledge: ['GSDP', 'OMS'],
-            detailedContent: 'Guía oficial TRS 1025 Anexo 7 sobre buenas prácticas de almacenamiento y distribución.'
-          }
-        ]
-      },
-      {
-        id: 'f2-b9',
-        phase: 2,
-        title: 'Bloque 9: Compras y Licitaciones',
-        description: 'Mes 9: Procurement, contratos y evaluación de proveedores.',
-        content: 'Transparencia, ética y cumplimiento regulatorio en la adquisición de medicamentos.',
-        keyKnowledge: ['Licitación', 'Contratos', 'Ética', 'Auditoría Proveedores'],
-        resources: [
-          {
-            title: 'Procurement Sections – Udemy',
-            type: 'video',
-            url: 'https://www.udemy.com/course/pharmaceutical-supply-chain-management-a-practical-guide/',
-            level: 'expert',
-            keyKnowledge: ['Evaluación Proveedor'],
-            detailedContent: 'Módulos orientados a la práctica de negociación y compra técnica.'
-          }
-        ]
-      },
-      {
-        id: 'f2-b10',
-        phase: 2,
-        title: 'Bloque 10: Cadena de Frío y Distribución',
-        description: 'Mes 9: Logística térmica y transporte seguro.',
-        content: 'Gestión de productos termosensibles, monitoreo de temperatura y segregación.',
-        keyKnowledge: ['Cold Chain', 'FEFO', 'Termosensibles', 'Humedad'],
-        resources: [
-          {
-            title: 'WHO Good Distribution Practices (GDP)',
-            type: 'article',
-            url: 'https://cdn.who.int/media/docs/default-source/medicines/norms-and-standards/guidelines/distribution/trs957-annex5-gdp-final.pdf',
-            level: 'expert',
-            keyKnowledge: ['GDP', 'Identidad Producto'],
-            detailedContent: 'Guía internacional sobre la calidad e identidad del producto durante el transporte.'
-          }
-        ]
-      },
-      {
-        id: 'f2-b11',
-        phase: 2,
-        title: 'Bloque 11: Riesgo y Trazabilidad',
-        description: 'Mes 10: QMS, CAPA y puntos críticos en suministro.',
-        content: 'Análisis FMEA aplicado a la logística y aseguramiento de la integridad de datos.',
-        keyKnowledge: ['FMEA', 'CAPA', 'Data Integrity', 'Trazabilidad'],
-        resources: [
-          {
-            title: 'Foundations of GMP – Auditing',
-            type: 'video',
-            url: 'https://www.usp.org/education/free-courses',
-            level: 'expert',
-            keyKnowledge: ['Auditoría Supply'],
-            detailedContent: 'Módulos de auditoría de la USP extrapolables a la cadena de suministro.'
-          }
-        ]
-      },
-      {
-        id: 'f2-b12',
-        phase: 2,
-        title: 'Bloque 12: Proyecto "Del API al Paciente"',
-        description: 'Mes 10: Integración de conocimientos industriales y supply.',
-        content: 'Simulación de flujo completo de un medicamento desde la planta hasta el uso por el paciente.',
-        keyKnowledge: ['Flujo Completo', 'Indicadores Calidad', 'Rol Director Técnico'],
-        resources: [
-          {
-            title: 'Guide to the Pharma Industry – Udemy',
-            type: 'video',
-            url: 'https://www.udemy.com/course/pharmaceutical-industry-guide/',
+            url: 'https://www.paho.org/es/temas/uso-racional-medicamentos-otras-tecnologias-sanitarias',
             level: 'intermediate',
-            keyKnowledge: ['Visión Global'],
-            detailedContent: 'Visión panorámica de mercados y tendencias para encajar tu proyecto en contexto global.'
+            keyKnowledge: ['Regulación Regional'],
+            detailedContent: 'Visión de la OPS sobre el aseguramiento de la calidad y uso racional.'
+          }
+        ]
+      },
+      {
+        id: 'f2-m8',
+        phase: 2,
+        title: 'Mes 8: Supply Chain y Acceso',
+        description: 'Ciclo de suministro, acceso y gestión logística.',
+        content: 'Selección, programación, adquisición, almacenamiento y distribución de medicamentos esenciales.',
+        keyKnowledge: ['Acceso a Medicamentos', 'Políticas Suministro', 'Ciclo Logístico'],
+        resources: [
+          {
+            title: 'Logística del Suministro – OPS/OMS (ES)',
+            type: 'article',
+            url: 'https://www.sefh.es/bibliotecavirtual/ops/logistica.pdf',
+            level: 'intermediate',
+            keyKnowledge: ['Manual Nora Girón'],
+            detailedContent: 'Referencia fundamental de la OPS sobre la logística de medicamentos esenciales.'
+          },
+          {
+            title: 'Acceso y Uso Racional – OPS (ES)',
+            type: 'article',
+            url: 'https://www.paho.org/sites/default/files/2023-01/pahocd5510spafinaldigital-copy.pdf',
+            level: 'intermediate',
+            keyKnowledge: ['Políticas Públicas'],
+            detailedContent: 'Documento sobre el panorama regional de acceso y precios de medicamentos.'
+          }
+        ]
+      },
+      {
+        id: 'f2-m9',
+        phase: 2,
+        title: 'Mes 9: Compras e Indicadores',
+        description: 'Procurement, planificación y métricas de desempeño.',
+        content: 'Procesos de compra, contratos, cuantificación de necesidades e indicadores de gestión.',
+        keyKnowledge: ['Licitación', 'Cuantificación', 'KPIs Suministro'],
+        resources: [
+          {
+            title: 'Manual de Procesos de Compra – Salud Mesoamérica (ES)',
+            type: 'article',
+            url: 'https://www.saludmesoamerica.org/sites/default/files/toolkits/documents/3.%20Manual%20de%20Procesos%20de%20comprar%20medicamentos%20e%20insumos%20sanitarios_0.pdf',
+            level: 'expert',
+            keyKnowledge: ['Contratación Pública'],
+            detailedContent: 'Manual práctico de procurement para insumos sanitarios.'
+          },
+          {
+            title: 'Planificación Abastecimiento – OPS (ES)',
+            type: 'article',
+            url: 'https://www.paho.org/sites/default/files/2024-11/guia-fundo-estrategico-internet.pdf',
+            level: 'expert',
+            keyKnowledge: ['Fondo Estratégico'],
+            detailedContent: 'Guía de planificación para el abastecimiento de insumos estratégicos.'
+          }
+        ]
+      },
+      {
+        id: 'f2-m10',
+        phase: 2,
+        title: 'Mes 10: Almacenamiento y Distribución',
+        description: 'GDP, cadena de frío e integración de servicios.',
+        content: 'Buenas prácticas de almacenamiento (GSDP), monitoreo de temperatura y atención primaria.',
+        keyKnowledge: ['GDP/GSDP', 'Cadena de Frío', 'TRS 1025 Anexo 7', 'Servicios APS'],
+        resources: [
+          {
+            title: 'WHO TRS 1025 Annex 7 (EN)',
+            type: 'article',
+            url: 'https://www.who.int/publications/i/item/978-92-4-000182-4',
+            level: 'expert',
+            keyKnowledge: ['GSDP International'],
+            detailedContent: 'La biblia internacional de las buenas prácticas de almacenamiento y distribución.'
+          },
+          {
+            title: 'Servicios Farmacéuticos APS – OPS (ES)',
+            type: 'article',
+            url: 'https://www3.paho.org/hq/dmdocuments/2013/serierapsano6-2013.pdf',
+            level: 'intermediate',
+            keyKnowledge: ['Atención Primaria'],
+            detailedContent: 'Visión integrada de la gestión de stock y calidad en servicios de salud primaria.'
           }
         ]
       }
@@ -513,7 +413,7 @@ export const ROADMAP: CourseModule[] = [
         keyKnowledge: ['Dossier CTD', 'Vigilancia Sanitaria', 'Leyes de Farmacia'],
         resources: [
           {
-            title: 'Regulatory Affairs – Udemy Masterclass',
+            title: 'Regulatory Affairs – Masterclass',
             type: 'article',
             url: 'https://www.udemy.com/course/pharmaceutical-regulatory-affairs/',
             level: 'expert',
