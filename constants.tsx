@@ -3,230 +3,540 @@ import { CourseModule } from './types';
 
 export const ROADMAP: CourseModule[] = [
   {
-    id: 'foundation',
-    title: 'Fase 1: Cimientos Científicos (Mes 1-4)',
+    id: 'fase-1',
+    title: 'Fase 1: Cimientos Científicos (Mes 1–4)',
     icon: 'fa-microscope',
     phase: 1,
     steps: [
       {
-        id: 'basic-chem',
+        id: 'f1-b1',
         phase: 1,
-        title: 'Química General e Inorgánica',
-        description: 'Desde la tabla periódica hasta la estequiometría farmacéutica.',
-        content: 'Todo gran farmacéutico domina la materia. Aquí aprenderás sobre enlaces químicos, soluciones y la base de las formulaciones inorgánicas.',
+        title: 'Bloque 1: Fundamentos y Tabla Periódica',
+        description: 'Semanas 1–2: Unidades, masa molar y tendencias periódicas.',
+        content: 'Dominio inicial del lenguaje químico: desde el análisis dimensional hasta la organización electrónica de los elementos.',
+        keyKnowledge: ['Análisis Dimensional', 'Masa Molar', 'Isótopos', 'Tendencias Periódicas'],
         resources: [
-          { title: 'Química de Chang - Capítulos Fundamentales', type: 'article', level: 'beginner', estimatedTime: '2 semanas', url: '#' },
-          { title: 'Simulador de Soluciones Molares', type: 'practice', level: 'beginner', estimatedTime: '3h', url: '#' }
-        ],
-        keyKnowledge: ['Unidades de concentración', 'Equilibrio Químico', 'Propiedades Coligativas'],
-        quiz: [
           {
-            question: "¿Qué es una solución isotónica en el contexto farmacéutico?",
-            options: ["Una solución con mayor presión osmótica que la sangre", "Una solución con la misma presión osmótica que los fluidos corporales", "Una solución con menos solutos que el agua destilada", "Una solución saturada de NaCl"],
-            correctAnswer: 1,
-            explanation: "Las soluciones isotónicas (como el SSN 0.9%) mantienen el equilibrio osmótico con las células, vital para inyectables."
+            title: 'Chemistry 2e (Cap. 1-2) – OpenStax',
+            type: 'article',
+            url: 'https://openstax.org/books/chemistry-2e/pages/1-introduction',
+            level: 'beginner',
+            estimatedTime: '2 semanas',
+            keyKnowledge: ['Átomos', 'Moléculas', 'Iones'],
+            detailedContent: `
+              <h2 class="text-2xl font-black mb-4">Fundamentos Químicos</h2>
+              <p class="mb-4">Este bloque establece las reglas del juego. Debes dominar la conversión de unidades sin dudar.</p>
+              <ul class="list-disc pl-6 space-y-2 mb-6">
+                <li><strong>Estudio sugerido:</strong> Capítulos 1 "Essentials" y 2 "Atoms, Molecules, and Ions".</li>
+                <li><strong>Reto Técnico:</strong> Resuelve 20 problemas de masa molar y conversión de moles antes de pasar al siguiente tema.</li>
+              </ul>
+            `
+          },
+          {
+            title: 'General Chemistry – Coursera',
+            type: 'video',
+            url: 'https://www.coursera.org/learn/general-chemistry',
+            level: 'beginner',
+            keyKnowledge: ['Desarrollo de Conceptos'],
+            detailedContent: 'Módulos 1 y 2. Enfócate en la aplicación práctica de la teoría atómica moderna.'
           }
         ]
       },
       {
-        id: 'org-chem-adv',
+        id: 'f1-b2',
         phase: 1,
-        title: 'Orgánica y Mecanismos de Reacción',
-        description: 'La arquitectura de las moléculas de los medicamentos.',
-        content: 'Estudiaremos cómo se forman los enlaces carbono-carbono y cómo los grupos funcionales dictan la farmacocinética.',
+        title: 'Bloque 2: Enlaces y Geometría',
+        description: 'Semanas 3–4: Estructuras de Lewis y teoría VSEPR.',
+        content: 'Comprender cómo se unen los átomos para formar moléculas y cómo su forma dicta su función biológica.',
+        keyKnowledge: ['Enlace Iónico/Covalente', 'Estructuras de Lewis', 'VSEPR', 'Polaridad'],
         resources: [
-          { title: 'Organic Chemistry Masterclass', type: 'video', level: 'intermediate', estimatedTime: '4 semanas', url: '#' },
-          { title: 'Banco de Síntesis de Heterociclos', type: 'practice', level: 'expert', estimatedTime: '10h', url: '#' }
-        ],
-        keyKnowledge: ['Estereoquímica', 'Quiralidad en Fármacos', 'Reactividad Nucleofílica'],
-        quiz: [
           {
-            question: "¿Por qué es crítica la quiralidad en la Talidomida?",
-            options: ["Un isómero es sedante y el otro teratogénico", "Ambos isómeros son idénticos", "La quiralidad solo afecta el color", "Aumenta la solubilidad en agua"],
-            correctAnswer: 0,
-            explanation: "La quiralidad puede determinar si un fármaco es seguro o tóxico; el isómero (S) de la talidomida causa malformaciones."
+            title: 'General Chemistry 1 – OLI (Carnegie Mellon)',
+            type: 'practice',
+            url: 'https://oli.cmu.edu/courses/general-chemistry-1-open-free/',
+            level: 'beginner',
+            keyKnowledge: ['Geometría Molecular'],
+            detailedContent: 'Módulos de Chemical Bonding & Molecular Structure. Practica dibujar moléculas de fármacos reales como el Paracetamol.'
+          }
+        ]
+      },
+      {
+        id: 'f1-b3',
+        phase: 1,
+        title: 'Bloque 3: Estequiometría y Gases',
+        description: 'Semanas 5–6: Ecuaciones químicas, rendimiento y soluciones.',
+        content: 'Cálculo exacto de reactivos y productos. Fundamental para la preparación de soluciones en farmacia hospitalaria.',
+        keyKnowledge: ['Reactivo Limitante', 'Rendimiento', 'Gases Ideales', 'Molaridad'],
+        resources: [
+          {
+            title: 'Stoichiometry (Cap. 5-9) – OpenStax',
+            type: 'article',
+            url: 'https://openstax.org/books/chemistry-2e/pages/5-introduction',
+            level: 'intermediate',
+            keyKnowledge: ['Balanceo', 'Concentración'],
+            detailedContent: 'Capítulos 5 (Estequiometría) y 9 (Gases). Realiza problemas de preparación de soluciones al 0.9% (SSN).'
+          }
+        ]
+      },
+      {
+        id: 'f1-b4',
+        phase: 1,
+        title: 'Bloque 4: Equilibrio y pH',
+        description: 'Semanas 7–8: Ácidos, bases, buffers y solubilidad Ksp.',
+        content: 'Entender el equilibrio químico es vital para comprender la absorción de fármacos (pKa) y la estabilidad de formulaciones.',
+        keyKnowledge: ['pH/pOH', 'Buffers', 'Ksp', 'Henderson-Hasselbalch'],
+        resources: [
+          {
+            title: 'Acids & Bases – Khan Academy',
+            type: 'video',
+            url: 'https://www.khanacademy.org/science/chemistry',
+            level: 'intermediate',
+            keyKnowledge: ['Equilibrio Iónico'],
+            detailedContent: 'Domina los conceptos de ácidos fuertes/débiles y el producto de solubilidad para entender precipitados en mezclas.'
+          }
+        ]
+      },
+      {
+        id: 'f1-b5',
+        phase: 1,
+        title: 'Bloque 5: Estructura Orgánica',
+        description: 'Semanas 9–10: Grupos funcionales e hibridación.',
+        content: 'Introducción a la química del carbono. Identificación de grupos funcionales en estructuras de fármacos complejos.',
+        keyKnowledge: ['Hibridación sp/sp2/sp3', 'Esqueleto de líneas', 'Grupos Funcionales'],
+        resources: [
+          {
+            title: 'Organic Chemistry – OpenStax',
+            type: 'article',
+            url: 'https://openstax.org/books/organic-chemistry/pages/index',
+            level: 'intermediate',
+            keyKnowledge: ['Nomenclatura', 'Estructura'],
+            detailedContent: 'Capítulos 1-3. Crea una tabla de grupos funcionales vinculando cada uno con un fármaco real (ej. Ácido carboxílico -> Aspirina).'
+          }
+        ]
+      },
+      {
+        id: 'f1-b6',
+        phase: 1,
+        title: 'Bloque 6: Estereoquímica',
+        description: 'Semanas 11–12: Quiralidad y su importancia clínica.',
+        content: '¿Por qué la forma espacial de una molécula cambia su efecto? El caso de la talidomida y el ibuprofeno.',
+        keyKnowledge: ['Enantiómeros', 'Diastereómeros', 'R/S System', 'Fischer Projections'],
+        resources: [
+          {
+            title: 'Stereochemistry Practice – ChemInteractive',
+            type: 'practice',
+            url: 'https://cheminteractive.ie/',
+            level: 'expert',
+            keyKnowledge: ['Centros Quirales'],
+            detailedContent: 'Ejercicios intensivos de determinación de centros R/S. Obligatorio para entender farmacología avanzada.'
+          }
+        ]
+      },
+      {
+        id: 'f1-b7',
+        phase: 1,
+        title: 'Bloque 7: Mecanismos SN y E',
+        description: 'Semanas 13–14: Sustitución nucleofílica y eliminación.',
+        content: 'Cómo se rompen y forman enlaces. SN1 vs SN2 y su competencia con las reacciones de eliminación.',
+        keyKnowledge: ['Nucleófilos', 'Sustratos', 'Cinética SN1/SN2', 'E1/E2'],
+        resources: [
+          {
+            title: 'Reaction Guide – Master Organic Chemistry',
+            type: 'article',
+            url: 'https://www.masterorganicchemistry.com/reaction-guide/',
+            level: 'expert',
+            keyKnowledge: ['Mecanismos'],
+            detailedContent: 'Guía visual definitiva de mecanismos. Dibuja a mano 15 mecanismos con flechas antes de validar.'
+          }
+        ]
+      },
+      {
+        id: 'f1-b8',
+        phase: 1,
+        title: 'Bloque 8: Carbonilos y Adición',
+        description: 'Semanas 15–16: Reactividad de alquenos y pro-fármacos.',
+        content: 'Final de la base científica: Hidrólisis de ésteres y amidas, clave para entender el metabolismo de pro-fármacos.',
+        keyKnowledge: ['Adición Nucleofílica', 'Hidrólisis de Ésteres', 'Aromaticidad'],
+        resources: [
+          {
+            title: 'Carbonyl Chemistry – Khan Academy',
+            type: 'video',
+            url: 'https://www.khanacademy.org/science/organic-chemistry',
+            level: 'expert',
+            keyKnowledge: ['Reactividad Carbonilo'],
+            detailedContent: 'Análisis de cómo se transforman los fármacos en el cuerpo mediante reacciones de hidrólisis.'
           }
         ]
       }
     ]
   },
   {
-    id: 'industrial-core',
-    title: 'Fase 2: Núcleo Profesional e Industrial (Mes 5-10)',
+    id: 'fase-2',
+    title: 'Fase 2: Núcleo Profesional (Mes 5–10)',
     icon: 'fa-industry',
     phase: 2,
     steps: [
       {
-        id: 'production-mixes',
+        id: 'f2-b1',
         phase: 2,
-        title: 'Producción Técnica y Mezclas',
-        description: 'Centrales de mezclas y ajuste de dosis (Funciones del Rol).',
-        content: 'Aprenderás a garantizar productividad, oportunidad y calidad en preparaciones magistrales y nutriciones parenterales.',
+        title: 'Bloque 1: Propiedades Fisicoquímicas',
+        description: 'Mes 5: Intro a Pharmaceutics y Preformulación.',
+        content: 'De la molécula al medicamento: estados físicos, tamaño de partícula y solubilidad.',
+        keyKnowledge: ['Solubilidad', 'Tensión Superficial', 'Preformulación', 'Fisicoquímica'],
         resources: [
-          { title: 'Guía de Buenas Prácticas de Elaboración (BPE)', type: 'article', level: 'expert', estimatedTime: '1 semana', url: '#' },
-          { title: 'Cálculo de Dosis Pediátricas y Oncológicas', type: 'practice', level: 'expert', estimatedTime: '5h', url: '#' }
-        ],
-        keyKnowledge: ['Cálculos de Infusión', 'Estabilidad de Mezclas', 'Áreas Blancas/Limpias'],
-        quiz: [
           {
-            question: "¿Qué es una cabina de flujo laminar vertical?",
-            options: ["Un extractor de aire común", "Un equipo para manejar citostáticos protegiendo al operador", "Un estante de almacenamiento", "Un sistema de refrigeración"],
-            correctAnswer: 1,
-            explanation: "El flujo vertical protege al operador de aerosoles peligrosos, común en centrales de mezclas oncológicas."
+            title: 'Essential Pharmaceutics – Brunaugh',
+            type: 'article',
+            url: 'https://ethernet.edu.et/handle/123456789/229',
+            level: 'intermediate',
+            keyKnowledge: ['Pharmaceutics', 'Fisicoquímica'],
+            detailedContent: 'Libro base para estudiantes con fundamentos de formas farmacéuticas y casos clínicos.'
+          },
+          {
+            title: 'Pharmaceutics I – Udemy (Free)',
+            type: 'video',
+            url: 'https://www.udemy.com/course/dosage-forms-pharmaceutics-i-dosage-forms-introduction/',
+            level: 'beginner',
+            keyKnowledge: ['Dosage Forms'],
+            detailedContent: 'Repaso básico y contextual de las diferentes formas farmacéuticas.'
           }
         ]
       },
       {
-        id: 'supply-chain',
+        id: 'f2-b2',
         phase: 2,
-        title: 'Gestión de Suministros y Compras',
-        description: 'Auditoría de consumos y gestión de medicamentos de alto costo.',
-        content: 'Funciones clave: recibir órdenes, auditar pedidos y modificar inventarios basados en perfiles epidemiológicos.',
+        title: 'Bloque 2: Clasificación y Sólidos',
+        description: 'Mes 5: Polvos, granulados y formas sólidas básicas.',
+        content: 'Categorización general y fundamentos de la fabricación de formas farmacéuticas sólidas.',
+        keyKnowledge: ['Polvos', 'Granulados', 'Sólidos', 'Clasificación'],
         resources: [
-          { title: 'Gestión de Inventarios Farmacéuticos ABC-VEN', type: 'article', level: 'intermediate', estimatedTime: '3h', url: '#' },
-          { title: 'Curso de Compras Públicas en Salud', type: 'video', level: 'intermediate', estimatedTime: '8h', url: '#' }
-        ],
-        keyKnowledge: ['Indicadores de Gestión (KPIs)', 'Rotación de Inventario', 'Cadena de Frío'],
-        quiz: [
           {
-            question: "¿Qué significa el sistema VEN en inventarios?",
-            options: ["Vital, Esencial, No esencial", "Verde, Escaso, Nuevo", "Venta, Entrega, Negociación", "Valor Estimado Neto"],
-            correctAnswer: 0,
-            explanation: "VEN prioriza los medicamentos según su importancia para la vida del paciente en la gestión hospitalaria."
+            title: 'Pharmaceutical Products – FutureLearn',
+            type: 'video',
+            url: 'https://www.futurelearn.com/courses/pharmaceutical-products-for-beginners',
+            level: 'intermediate',
+            keyKnowledge: ['Diseño de Producto'],
+            detailedContent: 'Curso de la Univ. de Malaya sobre el diseño y procesos básicos de fabricación.'
+          }
+        ]
+      },
+      {
+        id: 'f2-b3',
+        phase: 2,
+        title: 'Bloque 3: Sólidos Orales Avanzados',
+        description: 'Mes 6: Procesos de comprimidos y cápsulas.',
+        content: 'Compresión, granulación y recubrimiento. Control de calidad de sólidos orales.',
+        keyKnowledge: ['Compresión', 'Recubrimiento', 'Control de Calidad', 'Disolución'],
+        resources: [
+          {
+            title: 'Modern Pharmaceutics: A Textbook',
+            type: 'article',
+            url: 'https://akfarm-xaverius.ac.id/download/pharmaceutical_dosage_forms.pdf',
+            level: 'expert',
+            keyKnowledge: ['Diseño Industrial'],
+            detailedContent: 'Visión profunda del diseño y fabricación a escala industrial de formas sólidas.'
+          }
+        ]
+      },
+      {
+        id: 'f2-b4',
+        phase: 2,
+        title: 'Bloque 4: Semisólidos y Tópicos',
+        description: 'Mes 6: Cremas, ungüentos y geles.',
+        content: 'Propiedades reológicas y estabilidad de sistemas dispersos para aplicación tópica.',
+        keyKnowledge: ['Emulgentes', 'Reología', 'Ungüentos', 'Geles'],
+        resources: [
+          {
+            title: 'Essential Pharmaceutics: Semisólidos',
+            type: 'article',
+            url: 'https://ethernet.edu.et/handle/123456789/229',
+            level: 'intermediate',
+            keyKnowledge: ['Sistemas Dispersos'],
+            detailedContent: 'Capítulos enfocados en reología y estabilidad física de emulsiones y semisólidos.'
+          }
+        ]
+      },
+      {
+        id: 'f2-b5',
+        phase: 2,
+        title: 'Bloque 5: Formas Líquidas',
+        description: 'Mes 7: Jarabes, suspensiones y emulsiones.',
+        content: 'Estabilidad de suspensiones (sedimentación) y emulsiones (HLB).',
+        keyKnowledge: ['Suspensiones', 'Emulsiones', 'HLB', 'Jarabe'],
+        resources: [
+          {
+            title: 'Liquid Dosage Forms – FutureLearn',
+            type: 'article',
+            url: 'https://www.futurelearn.com/courses/pharmaceutical-products-for-beginners',
+            level: 'intermediate',
+            keyKnowledge: ['Tensoactivos', 'HLB'],
+            detailedContent: 'Módulos sobre tipos de formas líquidas y parámetros de calidad críticos.'
+          }
+        ]
+      },
+      {
+        id: 'f2-b6',
+        phase: 2,
+        title: 'Bloque 6: Estériles y GMP',
+        description: 'Mes 7: Inyectables, estabilidad y principios GMP.',
+        content: 'Requisitos de esterilidad, pirogenicidad y liofilización. Introducción a normas industriales.',
+        keyKnowledge: ['Esterilidad', 'Liofilización', 'BPM/GMP', 'Estabilidad'],
+        resources: [
+          {
+            title: 'Foundations of GMP – USP (Gratis)',
+            type: 'video',
+            url: 'https://www.usp.org/global-public-health/promoting-quality-of-medicines/gmp-online-course',
+            level: 'expert',
+            keyKnowledge: ['GMP OMS', 'PIC/S'],
+            detailedContent: 'Curso de 10 módulos sobre principios de manufactura de calidad mundial.'
+          }
+        ]
+      },
+      {
+        id: 'f2-b7',
+        phase: 2,
+        title: 'Bloque 7: Supply Chain Farmacéutica',
+        description: 'Mes 8: Ciclo de suministro y actores del sector.',
+        content: 'Mapeo de la cadena: desde el fabricante hasta la farmacia hospitalaria/comunitaria.',
+        keyKnowledge: ['Ciclo de Suministro', 'Mayoristas', 'Actores', 'Disponibilidad'],
+        resources: [
+          {
+            title: 'Practical Pharma Supply Management',
+            type: 'article',
+            url: 'https://www.udemy.com/course/pharmaceutical-supply-chain-management-a-practical-guide/',
+            level: 'intermediate',
+            keyKnowledge: ['Cuantificación', 'Especificación'],
+            detailedContent: 'Curso completo sobre planificación y distribución con enfoque en países de ingresos medios.'
+          },
+          {
+            title: 'Phasuma: Consultoría Supply',
+            type: 'article',
+            url: 'https://phasuma.com/',
+            level: 'beginner',
+            keyKnowledge: ['Mapeo de Cadena'],
+            detailedContent: 'Referencia técnica sobre las etapas críticas del ciclo de suministro farmacéutico.'
+          }
+        ]
+      },
+      {
+        id: 'f2-b8',
+        phase: 2,
+        title: 'Bloque 8: Planificación e Inventario',
+        description: 'Mes 8: Cuantificación, pronóstico y stock de seguridad.',
+        content: 'Cálculo de necesidades basado en consumo histórico y morbilidad epidemiológica.',
+        keyKnowledge: ['Lead Time', 'Punto de Pedido', 'Stock Seguridad', 'Forecasting'],
+        resources: [
+          {
+            title: 'WHO Storage & Distribution Practices',
+            type: 'article',
+            url: 'https://extranet.who.int/prequal/sites/default/files/document_files/TRS1025_annex7.pdf',
+            level: 'expert',
+            keyKnowledge: ['GSDP', 'OMS'],
+            detailedContent: 'Guía oficial TRS 1025 Anexo 7 sobre buenas prácticas de almacenamiento y distribución.'
+          }
+        ]
+      },
+      {
+        id: 'f2-b9',
+        phase: 2,
+        title: 'Bloque 9: Compras y Licitaciones',
+        description: 'Mes 9: Procurement, contratos y evaluación de proveedores.',
+        content: 'Transparencia, ética y cumplimiento regulatorio en la adquisición de medicamentos.',
+        keyKnowledge: ['Licitación', 'Contratos', 'Ética', 'Auditoría Proveedores'],
+        resources: [
+          {
+            title: 'Procurement Sections – Udemy',
+            type: 'video',
+            url: 'https://www.udemy.com/course/pharmaceutical-supply-chain-management-a-practical-guide/',
+            level: 'expert',
+            keyKnowledge: ['Evaluación Proveedor'],
+            detailedContent: 'Módulos orientados a la práctica de negociación y compra técnica.'
+          }
+        ]
+      },
+      {
+        id: 'f2-b10',
+        phase: 2,
+        title: 'Bloque 10: Cadena de Frío y Distribución',
+        description: 'Mes 9: Logística térmica y transporte seguro.',
+        content: 'Gestión de productos termosensibles, monitoreo de temperatura y segregación.',
+        keyKnowledge: ['Cold Chain', 'FEFO', 'Termosensibles', 'Humedad'],
+        resources: [
+          {
+            title: 'WHO Good Distribution Practices (GDP)',
+            type: 'article',
+            url: 'https://cdn.who.int/media/docs/default-source/medicines/norms-and-standards/guidelines/distribution/trs957-annex5-gdp-final.pdf',
+            level: 'expert',
+            keyKnowledge: ['GDP', 'Identidad Producto'],
+            detailedContent: 'Guía internacional sobre la calidad e identidad del producto durante el transporte.'
+          }
+        ]
+      },
+      {
+        id: 'f2-b11',
+        phase: 2,
+        title: 'Bloque 11: Riesgo y Trazabilidad',
+        description: 'Mes 10: QMS, CAPA y puntos críticos en suministro.',
+        content: 'Análisis FMEA aplicado a la logística y aseguramiento de la integridad de datos.',
+        keyKnowledge: ['FMEA', 'CAPA', 'Data Integrity', 'Trazabilidad'],
+        resources: [
+          {
+            title: 'Foundations of GMP – Auditing',
+            type: 'video',
+            url: 'https://www.usp.org/education/free-courses',
+            level: 'expert',
+            keyKnowledge: ['Auditoría Supply'],
+            detailedContent: 'Módulos de auditoría de la USP extrapolables a la cadena de suministro.'
+          }
+        ]
+      },
+      {
+        id: 'f2-b12',
+        phase: 2,
+        title: 'Bloque 12: Proyecto "Del API al Paciente"',
+        description: 'Mes 10: Integración de conocimientos industriales y supply.',
+        content: 'Simulación de flujo completo de un medicamento desde la planta hasta el uso por el paciente.',
+        keyKnowledge: ['Flujo Completo', 'Indicadores Calidad', 'Rol Director Técnico'],
+        resources: [
+          {
+            title: 'Guide to the Pharma Industry – Udemy',
+            type: 'video',
+            url: 'https://www.udemy.com/course/pharmaceutical-industry-guide/',
+            level: 'intermediate',
+            keyKnowledge: ['Visión Global'],
+            detailedContent: 'Visión panorámica de mercados y tendencias para encajar tu proyecto en contexto global.'
           }
         ]
       }
     ]
   },
   {
-    id: 'clinical-quality',
-    title: 'Fase 3: Especialidad Clínica y Calidad (Mes 11-16)',
+    id: 'fase-3',
+    title: 'Fase 3: Especialidad Clínica (Mes 11–16)',
     icon: 'fa-clipboard-check',
     phase: 3,
     steps: [
       {
-        id: 'pharmacotherapy-adv',
+        id: 'atencion-farmaceutica',
         phase: 3,
-        title: 'Seguimiento Farmacoterapéutico',
-        description: 'Garantizar el uso racional en IPS (Nivel PEBC).',
-        content: 'Uso de la metodología Dáder y detección de PRM (Problemas Relacionados con Medicamentos).',
+        title: 'M11-13: Seguimiento Clínico',
+        description: 'Pharmaceutical Care y uso racional de medicamentos.',
+        content: 'Gestión de PRM (Problemas Relacionados con Medicamentos) y atención directa al paciente.',
+        keyKnowledge: ['Método Dáder', 'MTM', 'Farmacoterapia', 'OSCE'],
         resources: [
-          { title: 'Método Dáder: Guía de Seguimiento', type: 'article', level: 'expert', estimatedTime: '2 semanas', url: '#' },
-          { title: 'Interacciones de Nivel 1 (Guía Rápida)', type: 'article', level: 'expert', url: '#' }
-        ],
-        keyKnowledge: ['RNM (Resultados Negativos)', 'Conciliación Medicamentosa', 'Farmacovigilancia Activa'],
-        quiz: [
           {
-            question: "¿Cuál es el objetivo principal de la conciliación medicamentosa?",
-            options: ["Ahorrar dinero en la farmacia", "Evitar discrepancias entre los medicamentos que el paciente tomaba y los nuevos", "Vender más medicamentos", "Simplificar la receta"],
-            correctAnswer: 1,
-            explanation: "La conciliación asegura que no haya omisiones o duplicidades durante las transiciones de cuidado (ej. ingreso a hospital)."
+            title: 'Good Pharmacy Practice – WHO/FIP',
+            type: 'article',
+            url: 'https://www.fip.org/good-pharmacy-practice',
+            level: 'expert',
+            keyKnowledge: ['GPP', 'Ética Clínica'],
+            detailedContent: 'Marco oficial internacional para la práctica de farmacia clínica.'
           }
         ]
       },
       {
-        id: 'quality-audit',
+        id: 'calidad-auditoria',
         phase: 3,
-        title: 'Gestión de Calidad y Auditoría',
-        description: 'Tratamiento de no conformes y auditorías al gerente general.',
-        content: 'Cómo realizar una auditoría técnica y presentar informes de cumplimiento regulatorio.',
+        title: 'M14-16: Gestión de Calidad',
+        description: 'Auditoría, CAPA y sistemas de gestión integrados.',
+        content: 'Dominio de ISO 9001 aplicado a salud y aseguramiento de la seguridad del paciente.',
+        keyKnowledge: ['ISO 9001', 'CAPA', 'Gestión de Riesgos', 'GXP'],
         resources: [
-          { title: 'Manual de Auditoría Farmacéutica ISO 9001', type: 'article', level: 'expert', estimatedTime: '3 semanas', url: '#' },
-          { title: 'Plantilla de Informe de Auditoría para Gerencia', type: 'practice', level: 'expert', url: '#' }
-        ],
-        keyKnowledge: ['Normas ISO en Salud', 'Acciones Correctivas (CAPA)', 'Trazabilidad de Lotes']
+          {
+            title: 'Pharmuni – GXP Training',
+            type: 'practice',
+            url: 'https://pharmuni.com/',
+            level: 'expert',
+            keyKnowledge: ['Certificación ISO', 'Auditoría Interna'],
+            detailedContent: 'Cursos certificados en GMP, GCP y GDP con trazabilidad internacional.'
+          }
+        ]
       }
     ]
   },
   {
-    id: 'international-licensing',
-    title: 'Fase 4: Élite Internacional (PEBC) y Liderazgo (Mes 17+)',
+    id: 'fase-4',
+    title: 'Fase 4: Élite Internacional (Mes 17–20)',
     icon: 'fa-globe',
     phase: 4,
     steps: [
       {
-        id: 'pebc-prep-bank',
+        id: 'blueprint-pebc',
         phase: 4,
-        title: 'Bancos de Preguntas PEBC',
-        description: 'Simulacros intensivos para el examen Evaluating y Qualifying.',
-        content: 'Tu meta final: el licenciamiento internacional. Enfoque en leyes canadienses, ética y farmacoterapia de alto nivel.',
+        title: 'M17-18: Blueprint y Repaso',
+        description: 'Alineación con las 9 competencias internacionales de PEBC.',
+        content: 'Cierre de brechas en legislación, ética y farmacocinética avanzada para el estándar canadiense.',
+        keyKnowledge: ['Ethical/Legal', 'Knowledge & Research', 'Health Promotion'],
         resources: [
-          { title: 'PEBC License Exam Bank (Acceso Premium)', type: 'exam', level: 'pebc', estimatedTime: '6 meses', url: '#' },
-          { title: 'Simulador OSCE: Estaciones de Comunicación', type: 'practice', level: 'pebc', url: '#' },
-          { title: 'PharmaSuccess PEBC Mastery Guide', type: 'article', level: 'pebc', url: '#' }
-        ],
-        keyKnowledge: ['Leyes Federales de Farmacia', 'Ética Profesional Canadiense', 'Cálculos Farmacéuticos Avanzados'],
-        quiz: [
           {
-            question: "En Canadá, ¿cuál es el rol de NAPRA?",
-            options: ["Vender seguros médicos", "Establecer estándares nacionales de práctica farmacéutica", "Fabricar medicamentos genéricos", "Regular el precio de las patentes"],
-            correctAnswer: 1,
-            explanation: "NAPRA (National Association of Pharmacy Regulatory Authorities) armoniza los estándares de práctica en todo Canadá."
+            title: 'PEBC Official Blueprint',
+            type: 'exam',
+            url: 'https://pebc.ca/pharmacists/qualifying-examination/',
+            level: 'pebc',
+            keyKnowledge: ['Syllabus', 'References'],
+            detailedContent: 'Documentación obligatoria para entender los dominios evaluados en el examen de licencia.'
+          }
+        ]
+      },
+      {
+        id: 'pebc-simulacros',
+        phase: 4,
+        title: 'M19-20+: Bancos y Simulacros',
+        description: 'Entrenamiento intensivo MCQ y estaciones OSCE.',
+        content: 'Estrategia de examen y resolución de casos complejos bajo presión de tiempo.',
+        keyKnowledge: ['Exam Strategy', 'MCQ Practice', 'OSCE Simulation'],
+        resources: [
+          {
+            title: 'PharmAchieve – MCQ & OSCE Prep',
+            type: 'practice',
+            url: 'https://pharmachieve.com/',
+            level: 'pebc',
+            keyKnowledge: ['Kroll System', 'Counselling'],
+            detailedContent: 'Plataforma líder en simulacros y bancos de preguntas para PEBC.'
           }
         ]
       }
     ]
   },
   {
-    id: 'technical-direction',
-    title: 'Fase 5: Dirección Técnica y Liderazgo (Expert)',
+    id: 'fase-5',
+    title: 'Fase 5: Dirección Técnica (Expert)',
     icon: 'fa-user-tie',
     phase: 5,
     steps: [
       {
-        id: 'regulatory-mastery',
+        id: 'asuntos-regulatorios',
         phase: 5,
-        title: 'Asuntos Regulatorios y Vigilancia Sanitaria',
-        description: 'Liderazgo integral en registros, certificaciones y cumplimiento técnico-legal.',
-        content: 'Aprenderás a gestionar el relacionamiento con entidades regulatorias (como INVIMA o FDA) para mantener registros sanitarios y autorizaciones de comercialización. Dominarás la toma de decisiones técnicas sobre aprobación y liberación de lotes.',
+        title: 'Liderazgo y Regulación Global',
+        description: 'Gestión ante FDA, EMA y Health Canada.',
+        content: 'Dominio de registros sanitarios, variaciones y farmacovigilancia post-comercialización.',
+        keyKnowledge: ['Dossier CTD', 'Vigilancia Sanitaria', 'Leyes de Farmacia'],
         resources: [
-          { title: 'Guía de Registros Sanitarios y Renovaciones', type: 'article', level: 'expert', estimatedTime: '2 semanas', url: '#' },
-          { title: 'Curso de Legislación Sanitaria Vigente', type: 'video', level: 'expert', estimatedTime: '15h', url: '#' },
-          { title: 'Manejo de Notificaciones Adversas (Farmacovigilancia)', type: 'practice', level: 'expert', url: '#' }
-        ],
-        keyKnowledge: ['Normatividad Sanitaria Nacional/Internacional', 'Gestión de Registros Sanitarios', 'Cumplimiento Técnico-Legal'],
-        quiz: [
           {
-            question: "¿Cuál es la función primordial de un Director Técnico en la liberación de un producto?",
-            options: ["Verificar el precio de venta", "Certificar que el lote cumple con todas las especificaciones y normatividad", "Entrevistar al personal de ventas", "Revisar el diseño de la caja"],
-            correctAnswer: 1,
-            explanation: "El Director Técnico es legalmente responsable de asegurar que cada producto liberado cumpla con los estándares de calidad y seguridad establecidos."
+            title: 'Regulatory Affairs – Udemy Masterclass',
+            type: 'article',
+            url: 'https://www.udemy.com/course/pharmaceutical-regulatory-affairs/',
+            level: 'expert',
+            keyKnowledge: ['FDA/EMA', 'eCTD'],
+            detailedContent: 'Guía completa sobre la documentación necesaria para la aprobación de fármacos.'
           }
         ]
       },
       {
-        id: 'quality-bpl-mastery',
+        id: 'plataformas-liderazgo',
         phase: 5,
-        title: 'Dirección de Calidad (BPM/BPL)',
-        description: 'Control fisicoquímico, microbiológico y dirección de laboratorios.',
-        content: 'Dominio de las Buenas Prácticas de Laboratorio (BPL) y Manufactura (BPM). Dirigirás unidades de análisis externos, garantizando la formación y el desempeño del equipo técnico bajo tu supervisión.',
+        title: 'Dirección de Calidad y Plataformas',
+        description: 'SICOQ, MedDRA, Kawak y liderazgo de equipos técnicos.',
+        content: 'Integración estratégica de sistemas digitales para el control de calidad y cumplimiento legal.',
+        keyKnowledge: ['SICOQ', 'MedDRA', 'Kawak', 'RH1', 'Liderazgo'],
         resources: [
-          { title: 'Manual de Control de Calidad Fisicoquímico', type: 'article', level: 'expert', url: '#' },
-          { title: 'Protocolos de Microbiología Farmacéutica', type: 'practice', level: 'expert', url: '#' },
-          { title: 'Simulación de Auditoría BPL (Inspección Visual)', type: 'practice', level: 'expert', url: '#' }
-        ],
-        keyKnowledge: ['Análisis Microbiológico', 'Ensayos Fisicoquímicos USP/BP', 'Liderazgo de Equipos Técnicos']
-      },
-      {
-        id: 'platforms-mastery',
-        phase: 5,
-        title: 'Dominio de Plataformas Sectoriales',
-        description: 'Uso experto de herramientas digitales: SICOQ, MedDRA, Kawak, RH1.',
-        content: 'La digitalización es clave. Debes ser experto en las plataformas que rigen la industria para reportes, gestión de calidad y control de sustancias.',
-        resources: [
-          { title: 'Tutorial Experto SICOQ: Sustancias Controladas', type: 'video', level: 'expert', estimatedTime: '5h', url: '#' },
-          { title: 'Guía MedDRA para Codificación de Reacciones', type: 'article', level: 'expert', url: '#' },
-          { title: 'Kawak: Gestión Documental de Calidad', type: 'practice', level: 'expert', url: '#' },
-          { title: 'Entorno PISIS y RH1: Reportes de Residuos Hospitalarios', type: 'article', level: 'expert', url: '#' },
-          { title: 'Manual NeosisPro para Clientes', type: 'article', level: 'expert', url: '#' }
-        ],
-        keyKnowledge: ['Codificación MedDRA', 'Control SICOQ', 'Gestión Kawak', 'Reportes RH1/PISIS'],
-        quiz: [
           {
-            question: "¿Para qué se utiliza principalmente MedDRA en la industria farmacéutica?",
-            options: ["Para calcular el precio de exportación", "Para la codificación estandarizada de eventos adversos", "Para diseñar moléculas en 3D", "Para gestionar la nómina"],
-            correctAnswer: 1,
-            explanation: "MedDRA es una terminología médica estandarizada globalmente para facilitar el intercambio de información regulatoria y farmacovigilancia."
+            title: 'Pharmacy Leadership – ASHP',
+            type: 'article',
+            url: 'https://elearning.ashp.org/products/7136/pharmacy-leadership-certificate-management-basics',
+            level: 'expert',
+            keyKnowledge: ['Management', 'KPIs'],
+            detailedContent: 'Certificación en fundamentos de gestión y liderazgo farmacéutico.'
           }
         ]
       }

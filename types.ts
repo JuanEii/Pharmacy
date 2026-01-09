@@ -4,7 +4,9 @@ export interface Resource {
   type: 'video' | 'article' | 'quiz' | 'practice' | 'exam';
   url: string;
   level?: 'beginner' | 'intermediate' | 'expert' | 'pebc';
-  estimatedTime?: string; // e.g., "2h", "1 week"
+  estimatedTime?: string;
+  detailedContent?: string;
+  keyKnowledge?: string[];
 }
 
 export interface QuizQuestion {
@@ -22,7 +24,7 @@ export interface ModuleStep {
   resources: Resource[];
   keyKnowledge: string[];
   quiz?: QuizQuestion[];
-  phase: number; // 1: Foundation, 2: Professional, 3: Specialist, 4: Expert/Licensing
+  phase: number;
 }
 
 export interface CourseModule {
