@@ -1,0 +1,7 @@
+{
+  "name": "PharmaPath: De Cero a Profesional Farmacéutico",
+  "description": "Una plataforma educativa interactiva diseñada para guiar a futuros Químicos Farmacéuticos desde los conceptos básicos hasta el cumplimiento de requisitos industriales y regulatorios de alto nivel.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
